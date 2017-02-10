@@ -1,0 +1,7 @@
+<%= link_to 'Add room', new_room_path, remote: true %>
+<div id="newRoom"></div>
+<ol id='rooms'>
+  <% @rooms.each do |room| %>
+    <%= render 'room', room: room %>
+  <% end %>
+</ol>

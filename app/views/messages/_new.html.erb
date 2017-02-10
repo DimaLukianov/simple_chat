@@ -1,0 +1,10 @@
+<% if current_user %>
+  <%# form_for current_user.messages.build, url: room_messages_path(room_id: @room.id) do |f| %>
+    <%# f.text_area :body %>
+    <%# f.submit 'Add' %>
+  <%# end %>
+  <form action="#" id="newMessage">
+    <input class="body" type="text" name="body" value="">
+    <input type="submit" name="create" value="Add">
+  </form>
+<% end %>
